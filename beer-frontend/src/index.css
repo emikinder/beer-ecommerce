@@ -1,0 +1,85 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #323232;
+  background-color: #fafafa;
+
+  /* Color palette */
+  --primary: #ff9e24;
+  --secondary: #e67e22;
+  --text-dark: #323232;
+  --text-light: #959595;
+  --background: #fafafa;
+
+  --small-radius: 10px;
+  --big-radius: 50px;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  width: 100%;
+  height: 100dvh;
+}
+
+nav {
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  color: var(--text-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.secondary-text {
+  color: var(--text-light);
+  font-size: small;
+}
+
+.dummy-button {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-radius: var(--small-radius);
+  padding: 0.5rem 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.dummy-button:hover {
+  background-color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+.products-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  width: 100%;
+}
+
+.spinner {
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
